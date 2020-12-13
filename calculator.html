@@ -1,17 +1,24 @@
 <!DOCTYPE html><html><head>
-<title>Calculator</title><meta charset="utf-8">
-<script type="text/javascript">
+    <title>Calculator</title><meta charset="utf-8">
+    <script type="text/javascript">
+    
+      function square() {
+        var num = document.getElementById("n1");
+        num.value = num.value * num.value;
+      }
 
-function square() {
-  var num = document.getElementById("n1");
-  num.value = num.value * num.value;
-}
-</script>
-</head>
-<body>
-  Number:
-  <input type="text" id="n1"><p>
+      function cube() {
+        var num = document.getElementById("n1");
+        num.value = Math.pow(num.value, 3);
+      }
 
-  <button onclick="square()"> x<sup>2</sup> </button>
-</body>
-</html>
+    </script>
+    </head>
+    <body>
+      Number:
+      <input type="text" id="n1"><p>
+    
+      <button onclick="square()"> x<sup>2</sup> </button>
+      <button onclick="cube()"> x<sup>3</sup> </button>
+    </body>
+    </html>
