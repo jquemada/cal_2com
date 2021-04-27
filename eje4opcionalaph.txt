@@ -1,0 +1,13 @@
+git clone https://github.com/Alanstark19/cal_2com.git
+ls
+ls -a cal_2com
+cd cal_2com
+git status
+git log
+git branch mi_rama master
+git checkout mi_rama
+git add .
+git commit -m "x^3button"
+git log --oneline
+git push https://github.com/Alanstark19/cal_2com.git mi_rama
+history -w eje4opcionalaph.txt
